@@ -197,4 +197,3 @@ const Home = () => {
 
 export default Home;
 
-{/* <Bar><BarHp width= {`${card.stats[0]?.base_stat * 100 / 180}%`}>{card.stats[0].base_stat}</BarHp></Bar> */}
