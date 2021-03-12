@@ -8,7 +8,7 @@ const Home = () => {
   const [card, setCard] = useState<any>();
   const [details, setDetails] = useState<boolean>(false);
 
-     let conta: any
+     
   const exit = () => {
     setDetails(false);
   }
@@ -122,7 +122,7 @@ const Home = () => {
                     modal(id);
                   }}
                 >
-                  <Circle><img src={imageUrl} /></Circle>
+                  <Circle><img alt="pokemon" src={imageUrl} /></Circle>
                   <p>{pokemon.name}</p>
                 </BlockPokemon>
 
@@ -140,7 +140,7 @@ const Home = () => {
             <Modal>
               <Card>
                 <BackType background= {colors(card.types[0].type.name)}>
-                   <img src={`https://pokeres.bastionbot.org/images/pokemon/${card.id}.png`} />
+                   <img alt="pokemon" src={`https://pokeres.bastionbot.org/images/pokemon/${card.id}.png`} />
                 </BackType>
                 <InfoPoke>
                   <Fechar onClick={exit}>X</Fechar>
